@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HWFlexPart1</title>
+    <style>
+     .Father{
+         width: 550px;
+         height: 600px;
+         display: flex;
+         justify-content: center;
+         flex-wrap: wrap;}
+     .A{
+         background-color: rgba(160, 75, 240, 0.466);
+         width: 550px;
+         height: 200px;
+        align-self: flex-start;}
+     .B{
+         background-color: rgba(207, 75, 174, 0.685);
+         width: 350px;
+         height: 400px;
+        flex-grow: 3;}
+     .C{
+         background-color: rgba(80, 156, 255, 0.664);
+         width: 150px;
+         height: 400px;
+         flex-grow: 1;}
+    </style>
+</head>
+
+<body>
+    <div class="Father">
+    <div class="A">
+        <h3>Element A</h3>
+    </div>
+    <div class="B">
+        <h3>Element B</h3>
+    </div>
+    <div class="C">
+        <h3>Element C</h3>
+    </div>
+</div>
+</body>
+</html>
