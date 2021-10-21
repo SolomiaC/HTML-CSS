@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSselectorsHWpart3</title>
+<style>
+    .Father h2, .Father h3{
+        color: rgba(7, 7, 95, 0.774);
+        text-align: center;}
+    
+    .Father{
+        background-color: rgb(196, 192, 221);
+        width: 600px;
+        height: 1000px;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        row-gap: 15px;}
+    .bg{
+        background-color: rgb(97, 150, 219);}
+    .w550{
+        width: 550px;}
+    .A{
+        height: 200px;}
+    .B, .C{
+        background-color: rgba(44, 58, 182, 0.733);
+        width: 270px;
+        height: 200px;}
+    .B{
+        margin-right: 11px;}
+    .D{
+        height: 570px;}
+    </style>
+</head>
+<body>
+    <div class="Father">
+        <div class="A bg w550">
+            <h2>Widgets</h2>
+        </div>
+        <div class="B">
+            <h3>Big Widgets</h3>
+        </div>
+        <div class="C">
+            <h3>Big Widgets</h3>
+        </div>
+        <div class="D bg w550">
+            <h2>Widgets</h2>
+        </div>
+    </div>
+</body>
+</html>

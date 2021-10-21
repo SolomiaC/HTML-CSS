@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSselectorsHWpart2</title>
+    <style>
+     .Father h2{
+         color: rgb(57, 61, 65);
+         text-align: center;}
+     .Father {
+         background-color: rgb(218, 195, 218);
+         width: 900px;
+         height: 800px;
+         display: flex;
+         justify-content: center;
+         flex-wrap: wrap;}
+    .Content{
+        display: flex;
+        flex-wrap: wrap;}
+    .ContentTwo{
+        display: flex;
+        flex-direction: column;}
+     .Header, .Footer{
+         background-color: rgba(118, 167, 89, 0.555);
+         width: 800px;
+         height: 200px;
+         margin: 10px;}
+     .Menu{
+         background-color: rgba(187, 86, 165, 0.445);
+         width: 200px;
+         height: 330px;
+         flex-grow: 1;
+         margin: 10px;
+         margin-left: 20px;}
+     .w580{
+         width: 580px;}
+     .h150{
+         height: 150px;}
+     .bg{
+        background-color: rgba(20, 121, 180, 0.548);}
+     .Post1{
+         flex-grow: 3;
+         row-gap: 10px;
+         margin: 10px;}
+     .Post2{
+        flex-grow: 3;
+        margin: 10px;} 
+    
+    </style>
+</head>
+<body>
+    <div class="Father">
+        <div class="Header">
+            <h2>Header</h2>
+        </div>
+        <div class="Content">
+        <div class="Menu">
+            <h2>Menu</h2>
+        </div>
+        <div class="ContentTwo">  
+        <div class="Post1 w580 h150 bg">
+            <h2>Post</h2>
+        </div>
+        <div class="Post2 w580 h150 bg">
+            <h2>Post</h2>
+        </div>
+        </div>
+        </div> 
+        <div class="Footer">
+            <h2>Footer</h2>
+        </div>
+        </div> 
+</body>
+</html>
