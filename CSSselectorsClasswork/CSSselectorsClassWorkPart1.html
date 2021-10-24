@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSselectorsClasswork</title>
+    <style>
+        .Text{
+           width: 80%;
+           line-height: 20px;
+           text-align: center;}
+        .ProduktsItem h3, .MotherForCircle{
+            width: 150px;
+            align-items: center;
+            margin-top: 15px;}
+        .Father, .Menu, .Container, .BorderForCircle, .MotherForCircle{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;}
+        .Menu, .Container, .BorderForCircle{
+            align-items: center;}
+        .Menu, .BorderForCircle{
+            border: rgba(170, 47, 143, 0.637) solid 5px;}
+        .Father{
+            background-color: rgb(79, 102, 167);
+            width: 1000px;
+            height: 1000px;}
+        .Menu{
+            border-radius: 20px;
+            width: 750px;
+            height: 450px;
+            column-gap: 10px;
+            margin-top: 10px;}
+        .Item{
+            background-color: rgba(146, 70, 121, 0.808);
+            width: 160px;
+            height: 200px;
+            border-radius: 10px;}
+        .Container{
+            background-color: rgba(146, 70, 121, 0.808);
+            width: 1000px;
+            height: 450px;
+            column-gap: 20px;}
+        .MotherForCircle{
+            width: 250px;}
+        .Circle1, .Circle2, .Circle3{
+            background-color: rgb(79, 102, 167);
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;}
+        .BorderForCircle{
+            height: 280px;
+            width: 250px;}
+    </style>
+</head>
+<body>
+    <div class="Father">
+        
+        <div class="Menu">
+            <h2 class="Text">
+                Lorem, ipsum
+            </h2>
+            <div class="ProduktsItem">
+            <div class="Item"></div>
+                <h3>
+                    Lorem, ipsum dolor
+                </h3>
+        </div>
+        <div class="ProduktsItem">
+            <div class="Item"></div>
+                <h3>
+                    Lorem, ipsum dolor
+                </h3>
+        </div>
+            <div class="ProduktsItem">
+            <div class="Item"></div>
+                <h3>
+                    Lorem, ipsum dolor
+                </h3>
+        </div>
+            <div class="ProduktsItem">
+            <div class="Item"></div>
+                <h3>
+                    Lorem, ipsum dolor
+                </h3>
+        </div>
+        </div>
+        <div class="Container">
+            <div class="MotherForCircle">
+            <div class="Circle1"></div>
+            <p>Lorem ipsum dolor sit</p>
+        </div>
+            <div class="MotherForCircle">
+            <div class="BorderForCircle">
+            <div class="Circle2"></div>
+            <p>Lorem ipsum dolor sit</p>
+        </div>
+        </div>
+        <div class="MotherForCircle">
+            <div class="Circle3"></div>
+            <p>Lorem ipsum dolor sit</p>
+        </div>
+        </div> 
+    </div>
+</body>
+</html>
