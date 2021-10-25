@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaScreen</title>
+    <style>
+        .SocialIcons, .Header-Top, .Header-Nav, .DescriptionMenu, .Description, .ButtonWrap, .Wrap, .Menu, .Container, .MotherForCircle, .Additional-Info, .WrapForAdditionalItems, .Produkt-Description, .Additional-Content, .Additional-Option, .Additional-Icons-Wrap, .WrapForContactUs, .WrapForEndIcons, .End-Wrap, .WrapForContactUsInfo {
+            display: flex;}
+        .SocialIcons, .Header-Nav{
+            justify-content: flex-end;
+            align-items: center;}
+        .DescriptionMenu, .End-Wrap, .WrapForEndIcons, .WrapForContactUs, .Produkt-Description, .Additional-Content, .WrapForAdditionalItems, .Description, .Additional-Info, .ButtonWrap, .Wrap, .Menu, .Container, .MotherForCircle{
+            justify-content: center;}
+        .Header-Top, .Additional-Info, .ProduktsItem h3, .MotherForCircle, .Menu, .Container{
+            align-items: center;}
+        .DescriptionItems, .Button, .Menu{
+            border-radius: 20px;}
+        .SocialIcons{
+            background-color: darkgoldenrod;
+            height: 50px;
+            padding: 0 25px;
+            column-gap: 7px;}
+        .SocialIcons-Link{
+            background-color: rgb(102, 76, 6);
+            width: 25px;
+            height: 5px;}
+        .Header-Top{
+            background-color: rgba(190, 165, 23, 0.644);
+            height: 70px;
+            padding: 10px 0 20px;
+            justify-content: space-around;
+            column-gap: 7px;}
+        .Header-Logo{
+            background-color: rgb(102, 76, 6);
+            width: 155px;
+            height: 50px;
+            border-radius: 10%;}
+        .Header-Nav{
+            column-gap: 10px;}
+        .Header-Nav-Link{
+            background-color: rgb(102, 76, 6);
+            width: 70px;
+            height: 5px;}
+        .DescriptionMenu{
+            background-color: darkgoldenrod;
+            height: 400px;
+            text-align: center;
+            flex-direction: column;
+            flex-wrap: wrap;}
+        .DescriptionItems{
+            background-color: rgb(102, 76, 6);
+            width: 150px;
+            height: 15px;
+            margin-bottom: 20px;}
+        .Description{
+            flex-wrap: wrap;
+            column-gap: 20px;}
+        .Button{
+            background-color: rgb(102, 76, 6);
+            width: 180px;
+            height: 40px;
+            margin-top: 25px;}
+        .Text{
+            width: 80%;
+            line-height: 20px;
+            text-align: center;}
+        .ProduktsItem h3{
+            width: 150px;
+            margin-top: 15px;}
+        .Wrap, .Menu, .Container, .MotherForCircle{
+            flex-wrap: wrap;}
+        .Menu{
+            border: darkgoldenrod solid 5px;}
+        .Wrap{
+            background-color: rgba(190, 165, 23, 0.644);
+            height: 1000px;}
+        .Menu{
+            height: 450px;
+            column-gap: 10px;
+            margin-top: 10px;}
+        .Item{
+            background-color: rgb(102, 76, 6);
+            width: 160px;
+            height: 200px;}
+        .Container{
+            background-color: rgb(102, 76, 6);
+            width: 1800px;
+            height: 450px;
+            column-gap: 20px;}
+        .MotherForCircle{
+            width: 250px;
+            margin-top: 20px;
+            border: 3px solid transparent;}
+        .Circle1, .Circle2, .Circle3{
+            background-color: rgba(190, 165, 23, 0.644);
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;}
+        .Additional-Info{
+            background-color: rgba(190, 165, 23, 0.644);
+            flex-wrap: wrap;}
+        .WrapForAdditionalItems{
+            width: 1200px;
+            flex-wrap: wrap;
+            column-gap: 30px;
+            padding: 70px;}
+       .Additional-Item1, .Additional-Item2, .Produkt, .Produkt-Foto{
+           border-radius: 15px;}
+       .Additional-Item1, .Additional-Item2{
+           height: 15px;}
+       .Additional-Item1{
+            background-color: rgb(102, 76, 6);
+            width: 150px;}
+        .Additional-Item2{
+            background-color: rgb(102, 76, 6);
+            width: 190px;}
+        .Additional-Content{
+           width: 1000px;
+           flex-wrap: wrap;
+           column-gap: 20px; }
+        .Produkt{
+            background-color:rgba(190, 165, 23, 0.644);
+            width: 230px;
+            height: 300px;
+            border: darkgoldenrod solid 5px;
+            margin-bottom: 20px;}
+        .Produkt-Description{
+            align-items: center;
+            flex-wrap: wrap;}
+        .Produkt-Foto, .Additional-Option{
+            border:darkgoldenrod solid 3px;}
+        .Produkt-Foto{
+            background-color: rgb(102, 76, 6);
+            width: 180px;
+            height: 100px;
+            margin: 17px; }
+        .Additional-Option{
+            height: 45px;
+            border-radius: 10px;
+            justify-content: space-around;}
+        .Additional-Button, .Additional-Icon{
+            background-color:rgb(102, 76, 6);
+            height: 20px;
+            margin-top: 10px;}
+        .Additional-Button{
+            width: 60px;}
+        .Additional-Icons-Wrap{
+            justify-content: flex-end;
+            column-gap: 5px;}
+        .Additional-Icon{
+            width: 20px;
+            border-radius: 5px;}
+        .Contact-Content{
+            color: black;
+            padding: 30px;}
+        .Contact-Us1, .Contact-Us2{
+            width: 400px;
+            height: 250px;
+            margin-top: 90px;
+            margin-bottom: 90px;}
+        .WrapForContactUsInfo{
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            column-gap: 20px;
+            margin-left: 30px;}
+        .ContactUsInfo1Light, .ContactUsInfo2Light, .ContactUsInfo1Dark, .ContactUsInfo2Dark{
+            height: 20px;
+            border-radius: 25px;
+            margin-top: 25px;}
+        .ContactUsInfo1Light, .ContactUsInfo1Dark{
+            width: 50px;}
+        .ContactUsInfo2Light, .ContactUsInfo2Dark{
+            width: 140px;}
+        .ContactUsInfoButtonLight, .ContactUsInfoButtonDark{
+            width: 140px;
+            height: 40px;
+            border-radius: 30px;
+            margin-left: 35px; }
+        .ContactUsInfoButtonLight, .Contact-Us2, .End-Block, .ContactUsInfo1Light, .ContactUsInfo2Light{
+            background-color: darkgoldenrod;}
+        .ContactUsInfo1Dark, .ContactUsInfo2Dark, .Contact-Us1, .ContactUsInfoButtonDark, .End-Wrap{
+            background-color:rgb(102, 76, 6);}
+        .End-Wrap{
+            height: 150px;
+            flex-wrap: wrap;}
+        .WrapForEndIcons{
+            width: 1600px;
+            flex-wrap: wrap;
+            column-gap: 20px;}
+        .Additional-Button, .EndIcon, .End-Block, .Item{
+            border-radius: 10px;}
+        .EndIcon{
+            background-color: rgba(190, 165, 23, 0.644);
+            width: 40px;
+            height: 40px;
+            margin-top: 30px;}
+        .End-Block{
+            width: 350px;
+            height: 5px;}
+        .MotherForCircle:hover{
+            border-color: rgb(218, 163, 12);}
+        @media  screen and (max-width: 500px) {
+            .SocialIcons, .DescriptionMenu, .ContactUsInfoButtonLight, .Contact-Us2, .End-Block, .ContactUsInfo1Light, .ContactUsInfo2Light {
+                background-color: rgba(144, 54, 167, 0.74);}
+            .SocialIcons-Link, .Header-Logo,  .Header-Nav-Link, .DescriptionItems, .Button, .Item, .Container, .Additional-Item1, .AdditionalItem2, .Produkt-Foto, .Additional-Button, .Additional-Icon,  .ContactUsInfo1Dark, .ContactUsInfo2Dark, .Contact-Us1, .ContactUsInfoButtonDark, .End-Wrap{
+                background-color: rgba(69, 4, 97, 0.644);}
+            .Header-Top, .Wrap, .Circle1, .Circle2, .Circle3, .Additional-Info, .Produkt, .EndIcon{
+                background-color: rgba(175, 84, 214, 0.438);}
+            .Menu, .Produkt, .MotherForCircle:hover, .Produkt-Foto, .Additional-Option{
+                border: 3px solid rgba(230, 17, 230, 0.644);}
+            .Wrap{
+                height: 1500px;}
+            .Menu{
+                width: 370px;
+                height: 700px;
+                margin-top: 20px;
+                margin-bottom: 20px;}
+            .Container{
+                height: 900px;}
+            .Additional-Item1, .Additional-Item2{
+                display: none;}
+            .Additional-Content{
+                margin-top: 70px;}
+            .WrapForContactUs{
+                display: flex;
+                flex-direction: column;}
+            .Contact-Us1, .Contact-Us2{
+                width: 330px;
+                padding: 10px;}
+            .Contact-Us2{
+                margin-top: 10px;}
+            .Contact-Content{
+            padding: 30px;}   
+            .Text, .Contact-Content, .ProduktsItem h3, .MotherForCircle p, .Produtk-Description h3, .Produtk-Description p, .DescriptionMenu h1, .DescriptionMenu p{
+                color: rgb(255, 255, 255);}
+            .MotherForCircle:hover{
+                display: none;}
+            }
+        @media (orientation: landscape){
+            .Header-Top{
+                display: none;} 
+            }
+        </style>
+    </head>
+    <body>
+        <div class="SocialIcons">
+            <div class="SocialIcons-Link"></div>
+            <div class="SocialIcons-Link"></div>
+            <div class="SocialIcons-Link"></div>
+            <div class="SocialIcons-Link"></div>
+        </div>
+            <div class="Header-Top">
+                <div class="Header-Logo"></div>
+                <div class="Header-Nav">
+                    <div class="Header-Nav-Link"></div>
+                    <div class="Header-Nav-Link"></div>
+                    <div class="Header-Nav-Link"></div>
+                    <div class="Header-Nav-Link"></div>
+                </div>
+            </div>
+       <div class="DescriptionMenu">
+            <div class="Description">
+               <div class="DescriptionItems"></div>
+               <div class="DescriptionItems"></div>
+               <div class="DescriptionItems"></div>
+           </div>
+    
+             <h1>Lorem, ipsum dolor</h1>
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus in reiciendis ea aperiam atque quia adipisci maxime illum voluptates accusamus?</p>
+             <div class="ButtonWrap">
+             <div class="Button"></div>
+            </div>
+        </div>
+        <div class="Wrap">
+            
+            <div class="Menu">
+                <h2 class="Text">
+                    Lorem, ipsum
+                </h2>
+                <div class="ProduktsItem">
+                <div class="Item"></div>
+                    <h3>
+                        Lorem, ipsum dolor
+                    </h3>
+            </div>
+            <div class="ProduktsItem">
+                <div class="Item"></div>
+                    <h3>
+                        Lorem, ipsum dolor
+                    </h3>
+            </div>
+                <div class="ProduktsItem">
+                <div class="Item"></div>
+                    <h3>
+                        Lorem, ipsum dolor
+                    </h3>
+            </div>
+                <div class="ProduktsItem">
+                <div class="Item"></div>
+                    <h3>
+                        Lorem, ipsum dolor
+                    </h3>
+            </div>
+            </div>
+            <div class="Container">
+                <div class="MotherForCircle">
+                <div class="Circle1"></div>
+                <p>Lorem ipsum dolor sit</p>
+            </div>
+                <div class="MotherForCircle">
+                
+                <div class="Circle2"></div>
+                <p>Lorem ipsum dolor sit</p>
+            </div>
+            <div class="MotherForCircle">
+                <div class="Circle3"></div>
+                <p>Lorem ipsum dolor sit</p>
+            </div>
+            </div> 
+        </div>
+        <div class="Additional-Info">
+         <div class="WrapForAdditionalItems">
+            <div class="Additional-Item1"></div>
+            <div class="Additional-Item2"></div>
+        </div>
+         <div class="Additional-Content">
+                <div class="Produkt">
+                    <div class="Produtk-Description">
+                        <div class="Produkt-Foto"></div>
+                        <h3>Lorem, ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, molestias.</p>
+                    </div>
+                    <div class="Additional-Option">
+                        <div class="Additional-Button"></div>
+                        <div class="Additional-Icons-Wrap"></div>
+                            <div class="Additional-Icon"></div>
+                            <div class="Additional-Icon"></div>
+                            <div class="Additional-Icon"></div>
+                        </div>
+                    </div>
+                 <div class="Produkt">
+                     <div class="Produtk-Description">
+                         <div class="Produkt-Foto"></div>
+                         <h3>Lorem, ipsum dolor</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, molestias.</p>
+                      </div>
+                      <div class="Additional-Option">
+                         <div class="Additional-Button"></div>
+                         <div class="Additional-Icons-Wrap"></div>
+                              <div class="Additional-Icon"></div>
+                              <div class="Additional-Icon"></div>
+                              <div class="Additional-Icon"></div>
+                          </div>
+                     </div>
+                  <div class="Produkt">
+                    <div class="Produtk-Description">
+                         <div class="Produkt-Foto"></div>
+                         <h3>Lorem, ipsum dolor</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, molestias.</p>
+                     </div>
+                     <div class="Additional-Option">
+                        <div class="Additional-Button"></div>
+                        <div class="Additional-Icons-Wrap"></div>
+                            <div class="Additional-Icon"></div>
+                            <div class="Additional-Icon"></div>
+                               <div class="Additional-Icon"></div>
+                           </div>
+                     </div>   
+                 <div class="Produkt">
+                    <div class="Produtk-Description">
+                       <div class="Produkt-Foto"></div>
+                        <h3>Lorem, ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, molestias.</p>
+                     </div>
+                     <div class="Additional-Option">
+                        <div class="Additional-Button"></div>
+                        <div class="Additional-Icons-Wrap"></div>
+                               <div class="Additional-Icon"></div>
+                               <div class="Additional-Icon"></div>
+                              <div class="Additional-Icon"></div>
+                         </div>
+                        </div>             
+                 <div class="Produkt">
+                       <div class="Produtk-Description">
+                          <div class="Produkt-Foto"></div>
+                         <h3>Lorem, ipsum dolor</h3>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, molestias.</p>
+                     </div>
+                    <div class="Additional-Option">
+                           <div class="Additional-Button"></div>
+                          <div class="Additional-Icons-Wrap"></div>
+                              <div class="Additional-Icon"></div>
+                              <div class="Additional-Icon"></div>
+                              <div class="Additional-Icon"></div>
+                         </div>
+                    </div>                 
+                <div class="Produkt">
+                         <div class="Produtk-Description">
+                         <div class="Produkt-Foto"></div>
+                         <h3>Lorem, ipsum dolor</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, molestias.</p>
+                       </div>
+                    <div class="Additional-Option">
+                    <div class="Additional-Button"></div>
+                         <div class="Additional-Icons-Wrap"></div>
+                             <div class="Additional-Icon"></div>
+                            <div class="Additional-Icon"></div>
+                            <div class="Additional-Icon"></div>
+                        </div>
+                 </div>
+              </div>
+    
+             <div class="WrapForContactUs">
+                 <div class="Contact-Us1">
+                     <div class="WrapForContactUsInfo">
+                         <div class="ContactUsInfo1Light"></div>
+                         <div class="ContactUsInfo2Light"></div>
+                     </div>
+                     <p class="Contact-Content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis nam corporis distinctio officia totam veritatis, modi quam eveniet possimus odio.</p>
+                     <div class="ContactUsInfoButtonLight"></div>
+                    </div>
+    
+    
+                 <div class="Contact-Us2">
+                    <div class="WrapForContactUsInfo">
+                        <div class="ContactUsInfo1Dark"></div>
+                        <div class="ContactUsInfo2Dark"></div>
+                    </div>
+                    <p class="Contact-Content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis nam corporis distinctio officia totam veritatis, modi quam eveniet possimus odio.</p>
+                    <div class="ContactUsInfoButtonDark"></div>
+                 </div>
+             </div>
+        </div>
+    <div class="End-Wrap">
+        <div class="WrapForEndIcons">
+            <div class="EndIcon"></div>
+            <div class="EndIcon"></div>
+            <div class="EndIcon"></div>
+        </div>
+        <div class="End-Block"></div>
+    </div>
+    
+        
+    </body>
+    </html>
