@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant_Template</title>
+    <style>
+       .Nav-Item a, .Contact p, .Contact-Phone, .Description-Button, .Contact-Button, .Description-Between-White-Borders{
+        color: #FFFFFF;}
+        .Header-Top, .Header-Menu, .Nav, .Description-Content{
+            display: flex;}
+       .Header{
+           width: 1440px;
+           height: 100vh;
+           background: no-repeat url("file:///Users/admin/Downloads/hero%20image.png");}
+        .Header-Top, .Nav, .Description-Content{
+            align-items: center;}
+        .Nav-Item img{
+           width: 20px;}
+        .Header-Top{
+            padding-top: 50px;}
+        .Header-Menu{
+            justify-content: flex-end;
+            margin-left: 300px;}
+        .Nav-Item a{
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 19px;
+            text-decoration: none;}
+        .Contact p{
+            font-size: 14px;}
+        .Header-Logo{
+            margin-left: 100px;}
+        .Nav{
+            height: 100px;
+            border-right: 2px solid white;
+            padding-right: 25px;
+            column-gap: 23px;}
+        .Contact-Phone, .Description,  .Description-Between-White-Borders{
+            font-style: normal;}
+        .Contact-Phone{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 25px;}
+        .Contact{
+            width: 200px;
+            padding-left: 20px;}
+        .Contact-Button{
+            width: 157px;
+            height: 47px;
+            background-color: #FF7400;
+            margin-top: 15px; }
+        .Description{
+            text-align: center;
+            width: 500px;
+            margin-top: 120px;
+            margin-left: 120px;}
+        .Description{
+            font-weight: normal;
+            font-size: 50px;
+            line-height: 57px;
+            color: #D67E35; }
+        .Description-Between-White-Borders{
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 25px;}
+        .White-Border{
+            width: 100px;
+            height: 2px;
+            background-color:#FFFFFF; }
+        .Description-Content{
+            justify-content: center;
+            column-gap: 7px;}
+        .Description-Button{
+            width: 137px;
+            height: 47px;
+            left: 356px;
+            top: 522px;
+            background: #FF7400;}
+        .Mobile-Button{
+            display: none;}
+        @media screen and (max-width: 400px){
+            .Nav, .Contact, .Contact-Button{
+                display: none;}
+            .Header{
+                width: 400px;}
+            .Header-Logo{
+                width: 30px;
+                height: 30px;
+                margin-left: 20px;}
+            .Description{
+               width: 300px;
+               margin-left: 50px;
+               font-style: normal;
+               font-weight: normal;
+               font-size: 30px;
+               line-height: 45px;
+               color: #D67E35; }
+            .Description-Between-White-Borders{
+               font-size: 10px;
+               line-height: 15px;}
+            .White-Border{
+                width: 60px;}
+            .Mobile-Button{
+                display: flex;
+                width: 30px;
+                height: 20px;
+                flex-wrap: wrap;
+                column-gap: 10px;
+                border-radius: 2px;}
+            .MB{
+                width: 40px;
+                height: 2px;
+                background-color: #FF7400;}
+            }
+        
+    </style>
+</head>
+<body>
+    <div class="Header">
+        <div class="Header-Top">
+            <div class="Header-Logo"><img src="file:///Users/admin/Downloads/LOGO.svg" alt="Logo"></div>
+            <div class="Header-Menu">
+                <div class="Mobile-Button">
+                    <div class="MB"></div>
+                    <div class="MB"></div>
+                    <div class="MB"></div>
+                </div>    
+            <div class="Nav">
+                <div class="Nav-Item"><a href="#">Головна</a></div>
+                <div class="Nav-Item"><a href="#">Меню</a></div>
+                <div class="Nav-Item"><a href="#">Про нас</a></div>
+                <div class="Nav-Item"><a href="#">Бронь</a></div>
+                <div class="Nav-Item"><a href="#"><img src="https://raw.githubusercontent.com/kruushik89/restaurant_template/6c289fac5aa9f358fb45b2cee820fca79112a783/image/shopping-cart-solid.svg" alt="shopping-card"></a></div>
+            </div>
+                <div class="Contact">
+                <div class="Contact-Phone"><img src="https://raw.githubusercontent.com/kruushik89/restaurant_template/master/image/phone.png" alt="PhoneIcon">+999-888-76-54</div>
+                 <p>Зв'яжіться з нами для бронювання</p>
+            </div>
+            <button class="Contact-Button">Замовити столик</button>
+        </div>
+        </div>
+        <div class="Description">Ласкаво просимо в Наш ресторан
+           <div class="Description-Content">
+            <div class="White-Border"></div>
+            <h2 class="Description-Between-White-Borders">ДІМ НАЙКРАЩОЇ ЇЖІ</h2>
+            <div class="White-Border"></div>
+           </div>
+           <button class="Description-Button">VIEW MENU</button>
+        </div>
+    </div>
+</body>
+</html>
