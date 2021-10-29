@@ -1,0 +1,65 @@
+.clr{
+    color: #FFFFFF;  }
+.Header{
+    width: 1440px;
+    height: 100vh;
+    background: no-repeat url(image/hero\ image.png);}
+.Logo{
+    width: 60px;
+    height: 60px;}
+.box img{
+    width: 30px;
+    height: 40px;}
+.btn {
+    background-color: #FF7400;}
+.Border{
+    background-color: #FFFFFF;
+    width: 3px;
+    height: 70px; }
+.father{
+    padding-top: 50px;}
+.Description,  .Description-Between-White-Borders{
+    font-style: normal;}
+.Description{
+    text-align: center;
+    width: 500px;
+    margin-top: 120px;
+    margin-left: 120px;}
+ .Description{
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 57px;
+     color: #D67E35; }
+ .Description-Between-White-Borders{
+     font-weight: normal;
+     font-size: 18px;
+    line-height: 25px;}
+ .White-Border{
+    width: 100px;
+    height: 2px;
+    background-color:#FFFFFF; }
+ .Description-Content{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    column-gap: 7px;}
+.Description{
+    margin-top: 150px;
+    width: 300px;
+    margin-left: 50px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 45px;
+    color: #D67E35; }
+ .Description-Between-White-Borders{
+     margin-top: 15px;
+    font-size: 15px;
+    line-height: 15px;}
+.White-Border{
+    width: 60px;}
+.mt{
+    margin-top: 20px;}
+.menu{
+    margin-left: 200px;
+    margin-top: 40px; }
