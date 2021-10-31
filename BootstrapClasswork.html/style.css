@@ -1,0 +1,58 @@
+.Father{
+    height: 80px;
+    border-bottom: solid 6px #E5E5E5;
+    padding-top: 10px;}
+.navbar-brand{
+    margin-right: 200px;}
+.Info, .SecondFather, .Wrap{
+    display: flex;
+    justify-self: center;
+    flex-wrap: wrap;}
+.Wrap{
+    width: 400px;
+    height: 600px;
+    margin-top: 80px;
+    margin-left: 150px;}
+.Border{
+    background-color: #E5E5E5;
+    width: 200px;
+    height: 10px;
+    margin-right: 200px;}
+.AirColledFoto{
+    margin-left: 100px;}
+.ProduktName, .MSW-MSAinfo h4{
+    font-family: BBC Reith Sans;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    color: #1652AC;}
+.ProduktName{
+    font-size: 48px;}
+.MSW-MSAinfo h4{
+    font-size: 20px;
+    padding-bottom: 40px;}
+.MSW-MSAinfo{
+    width: 500px;}
+.MSW-MSAinfo p{
+    padding-bottom: 40px;}
+.ModernsteStandarts{
+    width: 600px;
+    margin-top: 200px;
+    margin-left: 200px;}
+.ModernsteStandarts h4{
+    font-size: 20px;
+    line-height: 40px;}
+.ModernsteStandarts p{
+    font-size: 17px;
+    line-height: 32px; }
+.ModernsteStandarts h4, .ModernsteStandarts p{
+    margin-bottom: 50px;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    color: #FBFDFF;}
+.Recktangle{
+    display: flex;
+    flex-wrap: wrap;
+    background: no-repeat url(image/Rectangle\ 166.png);}
