@@ -1,0 +1,310 @@
+.Header{
+    background: no-repeat url(image/Rectangle\ 76.png);
+    height: 36px;}
+ .container, .Header, .Button-with-Email, .Column, .Additional-Farher-for-Shopping-Card-and-News, .Wrap-for-News, .Father-For-Shopping, .Wrap-for-Shopping-Card, .Second-slider, .AdditionalProdukts-Price, .Father-for-additional-produkts-item, .WrapForAdditionalProdukts, .Content-In-Carousel, .WrapForContent-In-Carousel, .WrapForCarousel, .WrapForAdditional-Icon, .WrapForIcon-Bar, .Father, .FatherForSearch, .navbar-toggle, .form-inline{
+    display: flex;}
+  .txt{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;} 
+    .navbar-brand{
+        padding-right: 50px;}
+   .menu{
+       padding-left: 250px;} 
+    .nav-item{
+      margin-top: 5px;}
+.Father{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    margin-top: 50px;}
+.Text p, .Text h3{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #0F2438;}
+  .FatherForSearch{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    column-gap: 70px;}
+  .navbar-toggle{
+    background-color: steelblue;
+    width: 150px;
+    height: 50px;
+    align-items: center;
+    border-radius: 6px;}
+.WrapForIcon-Bar{
+  flex-direction: column;}
+.icon-bar{
+  background-color: white;
+  width: 23px;
+  height: 3px;
+  margin-top: 5px;
+  margin-right: 15px;
+  margin-left: 20px;}
+.form-inline{
+  flex-wrap: wrap;
+  height: 50px;
+  border-radius: 6px;}
+.navbar {
+  width: 600px;}
+.form-control{
+  width: 400px;}
+.w100{
+  width: 100px;}
+.clr{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;}
+.bg{
+  background-color: #005BB9; }
+.WrapForAdditional-Icon{
+  flex-wrap: wrap;
+  column-gap: 30px;
+  margin-top: 30px; }
+.Additional-Icon{
+  width: 120px;
+  padding-right: 15px;
+  text-align: end;
+  align-items: center;}
+.brd{
+  border-right: solid 1px #E1E5F8;
+  height: 30px;}
+.txtaddicon{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #0F2438; }
+.WrapForCarousel{
+  justify-content: center;
+  margin-top: 60px;
+  column-gap: 20px;}
+.carousel{
+ background: no-repeat url(image/Mask\ Group\ \(1\).png);
+ width: 900px;
+ height: 350px;
+ border-radius: 10px;}
+.WrapForContent-In-Carousel{
+ flex-wrap: wrap; }
+.AdditionalWrapForContent-In-Carousel{
+ width: 350px;
+ margin-left: 100px;
+ margin-top: 30px;}
+.btn-primary{
+ width: 150px;
+ height: 50px;
+ display: flex;
+ flex-wrap: wrap;
+ column-gap: 15px;
+ justify-content: center;
+ align-items: center;
+ margin-top: 30px;}
+.Content-In-Carousel h4, .Content-In-Carousel p{
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 37px;
+line-height: 43px;}
+.clr-blue{
+  color: #005BB9;}
+.Content-In-Carousel img{
+  height: 20px;
+  margin-top: 20px;}
+.Content-In-Carousel{
+  flex-wrap: wrap;
+  margin-top: 30px;}
+.WrapForAdditionalProdukts{
+  flex-direction: row;
+  height: 290px;
+  width: 600px;
+  column-gap: 20px;
+  margin-left: 200px;}
+.Additional-Produkts{
+  background: #F4F5FA;
+  width: 260px;
+  height: 170px;
+  border-radius: 10px;
+  padding-top: 10px;
+  margin-top: 60px;}
+.Father-for-additional-produkts-item{
+  flex-wrap: wrap;}
+.Additional-Produkt-Text{
+  width: 150px;
+  margin-left: 15px;}
+.AdditionalProdukts-Price{
+  flex-wrap: wrap;
+  margin-top: 10px;
+  column-gap: 20px;
+  justify-content: end;
+  margin-right: 15px;}
+.h15{
+  height: 15px;}
+.price-orange{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFB800;}
+.pdngleft{
+  padding-left: 10px;}
+.Second-slider{
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 400px;
+  column-gap: 20px;
+  align-items: center;
+  margin-bottom: 70px; }
+.Slider-Item{
+  width: 400px;
+  height: 220px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: solid 2px #F4F5FA;
+  border-radius: 5px;}
+.Slider-Item-Text{
+  width: 160px;
+  margin-left: 25px;
+  margin-right: 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #0A1A2C;}
+.w100{
+  width: 100px;}
+.Buttons{
+  display: flex;
+  column-gap: 10px;
+  margin-left: 220px;
+  margin-bottom: 70px;}
+.Wrap-for-Shopping-Card{
+  width: 1000px;
+  flex-wrap: wrap;
+  margin-left: 300px;
+  margin-bottom: 90px;}
+.Shopping-Card{
+  width: 250px;
+  height: 365px; 
+  padding-left: 15px;}
+  .Add-Wrap-Shopping-Button{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;}
+.Shopping-Card button{
+  width: 170px;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;}
+.mrgntop{
+ margin-top: 10px;}
+.Father-For-Shopping{
+ flex-direction: column;
+justify-content: center;}
+.btn-outline-primary{
+ width: 150px;}
+.For-btn-outline-primary{
+ display: flex;
+ justify-content: center;
+ margin-bottom: 150px;}
+.Wrap-for-Border{
+width: 1000px;
+height: 50px;
+margin-left: 250px;}
+.Border{
+width: 1100px;
+background: #F5F5F5;
+height: 10px;}
+.Wrap-for-News{
+justify-content: center;
+column-gap: 40px;}
+.News{
+width: 250px;
+height: 300px;
+padding: 15px; }
+.News h6, .News p{
+padding-top: 25px;}
+.News h6{
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+text-decoration-line: underline;
+color: #005BB9;}
+.News p{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #242424;}
+.Additional-Farher-for-Shopping-Card-and-News, .Column{
+    flex-direction: column;}
+  .Black-Background{
+    background: #0C1A2A;
+    width: 1600px;
+    height: 500px;
+    margin-top: 150px;
+    margin-left: 50px;}
+  .Info{
+    width: 600px;
+    height: 350px;}
+  .Info, .Black-Background, .Wrap-for-Contacts, .SocItem{
+    display: flex;
+    flex-wrap: wrap;}
+  .Information, .Contact-us{
+    height: 350px;
+    padding: 30px;
+    column-gap: 15px;}
+    .Contact-us{
+      width: 400px; }
+    .Information{
+      width: 200px;}
+  .Information h6, .Contact-us h6{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #868DAC;}
+  .Information p, .Contact-us p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;}
+  .Details{
+    height: 300px;
+    width: 800px;}
+  .bg2{
+    background: #0C1A2A;}
+  .email-form{
+    width: 20px;}
+  .Button-with-Email{
+    width: 450px;
+    margin-left: 250px;
+    flex-direction: column;}
+  .SocItem{
+    column-gap: 30px;
+    margin-top: 30px;
+    margin-left: 250px;}
+  .Last-Item{
+    margin-left: 50px;}

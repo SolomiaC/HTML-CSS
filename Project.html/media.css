@@ -1,0 +1,153 @@
+@media screen and (max-width: 320px){
+    .Icon2, .ChevronOne, .ChevronTwo, .Icon3, .WrapForAdditional-Icon, .sr-only, .btn p, .carousel-control-prev, .carousel-control-next, .Border{ 
+      display: none;}
+    .Header{
+      width: 320px;}
+    .navbar{
+     margin-right: 250px;
+     width: 40px;
+     height: 30px;
+     display: flex;
+     justify-content: center;}
+  .FatherForSearch{
+    width: 320px;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;}
+ .form-inline{
+   display: flex;
+   justify-content: center;}
+ .btn{
+   width: 40px;
+   height: 30px;}
+ .form-control{
+   width: 200px;
+   height: 30px;
+   margin-top: 10px;
+   margin-left: 100px;}
+  .WrapForCarousel{
+    width: 320px;} 
+  .carousel {
+    width: 310px;}
+ .AdditionalWrapForContent-In-Carousel{
+   display: flex;
+   margin-left: 25px;
+   flex-direction: column;
+   width: 160px;}
+ .Content-In-Carousel h4, .Content-In-Carousel p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;}
+.WrapForContent-In-Carousel{
+ display: flex;
+ flex-direction: row;
+align-items: center;}
+.btn-primary{
+ width: 70px;
+ height: 30px;
+ align-items: center;
+ margin-top: 30px;}
+.Content-In-Carousel img{
+  height: 12px;
+  margin-top: 20px;}
+.Content-In-Carousel{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;}
+.Content-In-Carousel-Foto img{
+  width: 100px;
+  height: 130px;
+  margin-top: 30px;}
+.WrapForAdditionalProdukts{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 35px;}
+.Slider-Item{
+  width: 300px;
+  margin-top: 70px;
+  height: 200px; } 
+.slider-media{
+  display: none;}
+.text-media, .Slider-Item img{
+ width: 130px;}
+.Slider-Item img{
+ width: 130px;}
+.Slider-Item button{
+  width: 110px; }
+.Buttons{
+ margin-left: 40px;
+ column-gap: 20px; }
+.Buttons button{
+  width: 100px;}
+.add-wrap-for-ms{
+  display: none;}
+.Wrap-for-Shopping-Card{
+  width: 310px;
+  height: 800px;
+  margin-left: 5px;
+  display: flex;
+  flex-wrap: wrap;}
+.Shopping-Card{
+  width: 150px;
+  height: 300px;
+  column-gap: 20px;}
+.Shopping-Card img{
+  width: 140px;}
+.Shopping-Card button{
+  width: 100px;
+  display: flex;
+  justify-content: center;}
+.btn img{
+  width: 20px;
+  height: 20px;}
+.For-btn-outline-primary button{
+  width: 160px;
+  margin-top: 60px;}
+.Wrap-for-Border{
+  margin-left: 25px;}
+.Wrap-for-News{
+  display: flex;
+  flex-direction: column;}
+.news-media{
+  margin-bottom: 80px;}
+.media-top{
+  margin-top: 150px;}
+.Black-Background{
+  width: 320px;
+  margin-left: 0px;
+  height: 2000px;}
+.Wrap-for-Contacts{
+  margin-top: 100px;
+  width: 200px;}
+.Details{
+  margin-bottom: 50px;}
+.Button-with-Email{
+  margin-left: 0px;
+  width: 320px;}
+.input-group-text{
+  height: 30px;
+  margin-top: 10px;}
+.input-group{
+  display: flex;
+  align-items: center;
+  margin-left: 0px;}
+.SocItem{
+  width: 300px;
+  margin-left: 120px;}
+.Last-Item{
+  margin-left: 0px;
+  width: 320px;
+  margin-top: 40px;
+  border-top: solid 1px #656a80;}
+.Last-Item img{
+  margin-top: 20px;
+  width: 250px;
+  margin-left: 0px;}
+.SocItem-Media{
+  display: flex;
+  flex-direction: column-reverse;}
+}

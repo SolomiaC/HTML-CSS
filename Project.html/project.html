@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>ProjectHTML</title>
+    <style>
+      .Header{
+        background: no-repeat url(image/Rectangle\ 76.png);
+        height: 36px;}
+     .container, .Header, .Button-with-Email, .Column, .Additional-Farher-for-Shopping-Card-and-News, .Wrap-for-News, .Father-For-Shopping, .Wrap-for-Shopping-Card, .Second-slider, .AdditionalProdukts-Price, .Father-for-additional-produkts-item, .WrapForAdditionalProdukts, .Content-In-Carousel, .WrapForContent-In-Carousel, .WrapForCarousel, .WrapForAdditional-Icon, .WrapForIcon-Bar, .Father, .FatherForSearch, .navbar-toggle, .form-inline{
+        display: flex;}
+      .txt{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;} 
+        .navbar-brand{
+            padding-right: 50px;}
+       .menu{
+           padding-left: 250px;} 
+        .nav-item{
+          margin-top: 5px;}
+    .Father{
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: 60px;
+        margin-top: 50px;}
+    .Text p, .Text h3{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: #0F2438;}
+      .FatherForSearch{
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 60px;
+        column-gap: 70px;}
+      .navbar-toggle{
+        background-color: steelblue;
+        width: 150px;
+        height: 50px;
+        align-items: center;
+        border-radius: 6px;}
+    .WrapForIcon-Bar{
+      flex-direction: column;}
+    .icon-bar{
+      background-color: white;
+      width: 23px;
+      height: 3px;
+      margin-top: 5px;
+      margin-right: 15px;
+      margin-left: 20px;}
+    .form-inline{
+      flex-wrap: wrap;
+      height: 50px;
+      border-radius: 6px;}
+    .navbar {
+      width: 600px;}
+    .form-control{
+      width: 400px;}
+    .w100{
+      width: 100px;}
+    .clr{
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #FFFFFF;}
+    .bg{
+      background-color: #005BB9; }
+    .WrapForAdditional-Icon{
+      flex-wrap: wrap;
+      column-gap: 30px;
+      margin-top: 30px; }
+    .Additional-Icon{
+      width: 120px;
+      padding-right: 15px;
+      text-align: end;
+      align-items: center;}
+    .brd{
+      border-right: solid 1px #E1E5F8;
+      height: 30px;}
+    .txtaddicon{
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 16px;
+      color: #0F2438; }
+    .WrapForCarousel{
+      justify-content: center;
+      margin-top: 60px;
+      column-gap: 20px;}
+   .carousel{
+     background: no-repeat url(image/Mask\ Group\ \(1\).png);
+     width: 900px;
+     height: 350px;
+     border-radius: 10px;}
+   .WrapForContent-In-Carousel{
+     flex-wrap: wrap; }
+   .AdditionalWrapForContent-In-Carousel{
+     width: 350px;
+     margin-left: 100px;
+     margin-top: 30px;}
+   .btn-primary{
+     width: 150px;
+     height: 50px;
+     display: flex;
+     flex-wrap: wrap;
+     column-gap: 15px;
+     justify-content: center;
+     align-items: center;
+     margin-top: 30px;}
+    .Content-In-Carousel h4, .Content-In-Carousel p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 37px;
+    line-height: 43px;}
+   .clr-blue{
+      color: #005BB9;}
+    .Content-In-Carousel img{
+      height: 20px;
+      margin-top: 20px;}
+    .Content-In-Carousel{
+      flex-wrap: wrap;
+      margin-top: 30px;}
+    .WrapForAdditionalProdukts{
+      flex-direction: row;
+      height: 290px;
+      width: 600px;
+      column-gap: 20px;
+      margin-left: 200px;}
+    .Additional-Produkts{
+      background: #F4F5FA;
+      width: 260px;
+      height: 170px;
+      border-radius: 10px;
+      padding-top: 10px;
+      margin-top: 60px;}
+    .Father-for-additional-produkts-item{
+      flex-wrap: wrap;}
+    .Additional-Produkt-Text{
+      width: 150px;
+      margin-left: 15px;}
+    .AdditionalProdukts-Price{
+      flex-wrap: wrap;
+      margin-top: 10px;
+      column-gap: 20px;
+      justify-content: end;
+      margin-right: 15px;}
+    .h15{
+      height: 15px;}
+    .price-orange{
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 23px;
+      color: #FFB800;}
+    .pdngleft{
+      padding-left: 10px;}
+    .Second-slider{
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 400px;
+      column-gap: 20px;
+      align-items: center;
+      margin-bottom: 70px; }
+    .Slider-Item{
+      width: 400px;
+      height: 220px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      border: solid 2px #F4F5FA;
+      border-radius: 5px;}
+    .Slider-Item-Text{
+      width: 160px;
+      margin-left: 25px;
+      margin-right: 5px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      color: #0A1A2C;}
+    .w100{
+      width: 100px;}
+    .Buttons{
+      display: flex;
+      column-gap: 10px;
+      margin-left: 220px;
+      margin-bottom: 70px;}
+    .Wrap-for-Shopping-Card{
+      width: 1000px;
+      flex-wrap: wrap;
+      margin-left: 300px;
+      margin-bottom: 90px;}
+    .Shopping-Card{
+      width: 250px;
+      height: 365px; 
+      padding-left: 15px;}
+      .Add-Wrap-Shopping-Button{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;}
+    .Shopping-Card button{
+      width: 170px;
+      height: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 10px;}
+   .mrgntop{
+     margin-top: 10px;}
+   .Father-For-Shopping{
+     flex-direction: column;
+    justify-content: center;}
+   .btn-outline-primary{
+     width: 150px;}
+   .For-btn-outline-primary{
+     display: flex;
+     justify-content: center;
+     margin-bottom: 150px;}
+   .Wrap-for-Border{
+    width: 1000px;
+    height: 50px;
+    margin-left: 250px;}
+   .Border{
+    width: 1100px;
+    background: #F5F5F5;
+    height: 10px;}
+  .Wrap-for-News{
+    justify-content: center;
+    column-gap: 40px;}
+  .News{
+    width: 250px;
+    height: 300px;
+    padding: 15px; }
+  .News h6, .News p{
+    padding-top: 25px;}
+  .News h6{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #005BB9;}
+    .News p{
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: #242424;}
+.Additional-Farher-for-Shopping-Card-and-News, .Column{
+        flex-direction: column;}
+      .Black-Background{
+        background: #0C1A2A;
+        width: 1600px;
+        height: 500px;
+        margin-top: 150px;
+        margin-left: 50px;}
+      .Info{
+        width: 600px;
+        height: 350px;}
+      .Info, .Black-Background, .Wrap-for-Contacts, .SocItem{
+        display: flex;
+        flex-wrap: wrap;}
+      .Information, .Contact-us{
+        height: 350px;
+        padding: 30px;
+        column-gap: 15px;}
+        .Contact-us{
+          width: 400px; }
+        .Information{
+          width: 200px;}
+      .Information h6, .Contact-us h6{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #868DAC;}
+      .Information p, .Contact-us p{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;}
+      .Details{
+        height: 300px;
+        width: 800px;}
+      .bg2{
+        background: #0C1A2A;}
+      .email-form{
+        width: 20px;}
+      .Button-with-Email{
+        width: 450px;
+        margin-left: 250px;
+        flex-direction: column;}
+      .SocItem{
+        column-gap: 30px;
+        margin-top: 30px;
+        margin-left: 250px;}
+      .Last-Item{
+        margin-left: 50px;}
+
+
+      @media screen and (max-width: 320px){
+        .Icon2, .ChevronOne, .ChevronTwo, .Icon3, .WrapForAdditional-Icon, .sr-only, .btn p, .carousel-control-prev, .carousel-control-next, .Border{ 
+          display: none;}
+        .Header{
+          width: 320px;}
+        .navbar{
+         margin-right: 250px;
+         width: 40px;
+         height: 30px;
+         display: flex;
+         justify-content: center;}
+      .FatherForSearch{
+        width: 320px;
+        height: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;}
+     .form-inline{
+       display: flex;
+       justify-content: center;}
+     .btn{
+       width: 40px;
+       height: 30px;}
+     .form-control{
+       width: 200px;
+       height: 30px;
+       margin-top: 10px;
+       margin-left: 100px;}
+      .WrapForCarousel{
+        width: 320px;} 
+      .carousel {
+        width: 310px;}
+     .AdditionalWrapForContent-In-Carousel{
+       display: flex;
+       margin-left: 25px;
+       flex-direction: column;
+       width: 160px;}
+     .Content-In-Carousel h4, .Content-In-Carousel p{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 25px;}
+   .WrapForContent-In-Carousel{
+     display: flex;
+     flex-direction: row;
+    align-items: center;}
+    .btn-primary{
+     width: 70px;
+     height: 30px;
+     align-items: center;
+     margin-top: 30px;}
+    .Content-In-Carousel img{
+      height: 12px;
+      margin-top: 20px;}
+    .Content-In-Carousel{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 20px;}
+    .Content-In-Carousel-Foto img{
+      width: 100px;
+      height: 130px;
+      margin-top: 30px;}
+    .WrapForAdditionalProdukts{
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      margin-left: 35px;}
+    .Slider-Item{
+      width: 300px;
+      margin-top: 70px;
+      height: 200px; } 
+    .slider-media{
+      display: none;}
+   .text-media, .Slider-Item img{
+     width: 130px;}
+   .Slider-Item img{
+     width: 130px;}
+    .Slider-Item button{
+      width: 110px; }
+    .Buttons{
+     margin-left: 40px;
+     column-gap: 20px; }
+    .Buttons button{
+      width: 100px;}
+    .add-wrap-for-ms{
+      display: none;}
+    .Wrap-for-Shopping-Card{
+      width: 310px;
+      height: 800px;
+      margin-left: 5px;
+      display: flex;
+      flex-wrap: wrap;}
+    .Shopping-Card{
+      width: 150px;
+      height: 300px;
+      column-gap: 20px;}
+    .Shopping-Card img{
+      width: 140px;}
+    .Shopping-Card button{
+      width: 100px;
+      display: flex;
+      justify-content: center;}
+    .btn img{
+      width: 20px;
+      height: 20px;}
+    .For-btn-outline-primary button{
+      width: 160px;
+      margin-top: 60px;}
+    .Wrap-for-Border{
+      margin-left: 25px;}
+    .Wrap-for-News{
+      display: flex;
+      flex-direction: column;}
+    .news-media{
+      margin-bottom: 80px;}
+    .media-top{
+      margin-top: 150px;}
+    .Black-Background{
+      width: 320px;
+      margin-left: 0px;
+      height: 2000px;}
+    .Wrap-for-Contacts{
+      margin-top: 100px;
+      width: 200px;}
+    .Details{
+      margin-bottom: 50px;}
+    .Button-with-Email{
+      margin-left: 0px;
+      width: 320px;}
+    .input-group-text{
+      height: 30px;
+      margin-top: 10px;}
+    .input-group{
+      display: flex;
+      align-items: center;
+      margin-left: 0px;}
+    .SocItem{
+      width: 300px;
+      margin-left: 120px;}
+    .Last-Item{
+      margin-left: 0px;
+      width: 320px;
+      margin-top: 40px;
+      border-top: solid 1px #656a80;}
+    .Last-Item img{
+      margin-top: 20px;
+      width: 250px;
+      margin-left: 0px;}
+    .SocItem-Media{
+      display: flex;
+      flex-direction: column-reverse;}
+ }
+
+    </style>
+</head>
+<body>
+<div class="Header">
+    <div class="container">
+
+        <nav class="navbar navbar-expand-xl navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand txt" href="#"><img src="image/placeholder 1.png" alt="location">Ваш город: Москва</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarWithDropdown" aria-controls="navbarWithDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarWithDropdown">
+                <ul class="navbar-nav">
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle txt" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Информация
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle txt" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Сотрудничество
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+                  <li class="menu nav-item">
+                    <a class="nav-link active txt" aria-current="page" href="#">Доставка</a>
+                  <li class="nav-item">
+                    <a class="nav-link active txt" aria-current="page" href="#">Оплата</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class=" nav-link active txt" aria-current="page" href="#">Гарантия</a>
+                 <li class="nav-item">
+                    <a class="nav-link active txt" aria-current="page" href="#">Новости</a>
+                <li class="nav-item">
+                    <a class="nav-link active txt" aria-current="page" href="#">Журнал</a>
+                <li class="nav-item">
+                     <a class="nav-link active txt" aria-current="page" href="#">Магазин</a>
+                <li class="nav-item">
+                     <a class="nav-link active txt" aria-current="page" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>              
+</div>  
+</div>
+
+<div class="WrapForFather">
+<div class="Father">
+    <div class="Icon1"><img src="image/Group 111.png" alt="logo"></div>
+    <div class="Icon2"><img src="image/Group 214.png" alt="time-icon"></div>
+    <div class="Icon3"><img src="image/placeholder 1 (1).png" alt="location">Невский пр-т, д. 45</div>
+    <div class="Icon4"><img src="image/Group 213.png" alt="WhatsApp"></div>
+    <div class="Icon5"><img src="image/Group 114.png" alt="WeCallYouBack"></div>
+<div class="FatherForSearch">
+      <button type="button" class="navbar-toggle collapsed clr bg" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <div class="WrapForIcon-Bar">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </div>
+    <span class="sr-only">Каталог</span>
+</button>
+<nav class="navbar navbar-light">
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="text" placeholder="Поиск по наименованию или артикулу">
+    <button class="btn btn-outline-success my-2 my-sm-0 w100 clr bg" type="submit"><p>
+      Найти</p></button>
+  </form>
+</nav>
+<div class="WrapForAdditional-Icon">
+  <div class="Additional-Icon txtaddicon brd"><img src="image/user (1) 1.png" alt="user">Войти</div>
+  <div class="Additional-Icon txtaddicon brd"><img src="image/Vector.png" alt="like">Избранное</div>
+  <div class="Additional-Icon txtaddicon"><img src="image/Group (3).png" alt="shopping-card">В корзине 
+    нет товаров</div>
+</div>
+
+</div>
+</div>
+
+<div class="WrapForCarousel">
+<div id="carouselDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-bs-target="#carouselDark" data-bs-slide-to="0" class="active"></li>
+    <li data-bs-target="#carouselDark" data-bs-slide-to="1"></li>
+    <li data-bs-target="#carouselDark" data-bs-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+
+      <div class="WrapForContent-In-Carousel">
+
+      <div class="AdditionalWrapForContent-In-Carousel">
+      <div class="Content-In-Carousel">
+        <h4>Сцепление в сборе</h4>
+        <img src="image/0AMCLUTCH.png" alt="code">
+      </div>
+      <div class="Content-In-Carousel">
+        <div class="clr-blue"><h4>14 499,99 ₽</h4></div>
+        <img src="image/18 550,99 ₽.png" alt="old-price">
+    </div>
+    <button type="button" class="btn btn-primary clr bg"><div><img src="image/Group.png" alt="shopping-btn"></div>
+    <p>
+      В корзину</p>
+    </button>
+     </div>
+     <div class="Content-In-Carousel-Foto"><img src="image/avt-zap_main_page_v01 (1) 1.png" alt="ProduktFoto"></div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselDark" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselDark" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+    </div>
+
+<div class="WrapForAdditionalProdukts"> 
+  <div class="Additional-Produkts txtaddicon ">
+    <div class="pdngleft"><h5>Акция</h5></div>
+    <div class="Father-for-additional-produkts-item">
+      <div class="Additional-Produkts-Foto"><img src="image/avt-zap_main_page_v01 (1)йцу 5.png" alt="produkt-foto"></div>
+      <div class="Additional-Produkt-Text txtaddicon"><h6>Обгонная муфта
+        гидротрансформатор</h6>
+        <p>BW-SP-2 SONNAX</p></div>
+    </div>
+    <div class="AdditionalProdukts-Price price-orange">
+      <p>4 430₽</p>
+      <div class="h15"><img src="image/5 430₽.png" alt="old-price"></div>
+      <button type="button" class="btn btn-info"><img src="image/Group (1).png" alt="shopping"></button>
+    </div>
+  </div>
+
+    <div class="Additional-Produkts txtaddicon">
+     <div class="pdngleft"><h5>Акция</h5></div>
+      <div class="Father-for-additional-produkts-item">
+        <div class="Additional-Produkts-Foto"><img src="image/avt-zap_main_page_v01 (1)йцу 7.png" alt="produkt-foto"></div>
+        <div class="Additional-Produkt-Text txtaddicon"><h6>Комплект фрикционных дисков</h6>
+          <p>BW-SP-2 SONNAX</p></div>
+      </div>
+      <div class="AdditionalProdukts-Price price-orange">
+        <p>4 430₽</p>
+        <div class="h15"><img src="image/5 430₽.png" alt="old-price"></div>
+        <button type="button" class="btn btn-info"><img src="image/Group (1).png" alt="shopping"></button>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="Second-slider">
+  <div class="ChevronOne"><img src="image/Group 217.png" alt="chevron-left"></div>
+  <div class="Slider-Item">
+    <div class="Slider-Item-Text text-media"><h5>Масла</h5>
+    <p>Трансмиссионное масло; присалка в масло акпп</p>
+    <button type="button" class="btn bg btn-success">Перейти</button>
+  </div>
+
+    <img src="image/avt-zap_main_page_v01 (1)йцу 1.png" alt="picture">
+  </div>
+  <div class="Slider-Item slider-media">
+    <div class="Slider-Item-Text"><h5>Фильтры</h5>
+      <p>Масляный фильтр; фильтр воздушный</p>
+      <button type="button" class="btn bg btn-success">Перейти</button>
+    </div>
+    <img src="image/avt-zap_main_page_v01 (1)йцу 2.png" alt="picture">
+  </div>
+  <div class="Slider-Item slider-media">
+    <div class="Slider-Item-Text"><h5>Радиаторы</h5>
+      <p>Дополнительные радиаторы</p>
+      <button type="button" class="btn bg btn-success">Перейти</button>
+    </div>
+    <div class="w100">
+    <img src="image/avt-zap_main_page_v01 (1)йцу 4.png" alt="picture">
+  </div>
+  </div>
+  <div class="ChevronTwo"><img src="image/Group 218.png" alt="chevron-right"></div>
+</div>
+
+<div class="Buttons">
+  <button type="button" class="btn btn-danger bg">Подборки товаров</button>
+  <button type="button" class="btn btn-outline-primary" data-bs-toggle="button" autocomplete="off">Акции</button>
+  <button type="button" class="btn btn-outline-primary add-wrap-for-ms" data-bs-toggle="button" autocomplete="off">Сейчас покупают</button>
+</div>
+
+<div class="Additional-Farher-for-Shopping-Card-and-News">
+
+<div class="Father-For-Shopping">
+<div class="Wrap-for-Shopping-Card">
+    <div class="Shopping-Card">
+      <img src="image/avt-zap_main_page_v01 (1)йцу 12.png" alt="produkt">
+        <img src="image/Group 228.png" alt="feedback">
+      <div><h6>Intermediate accumelator sleeve</h6>
+      <img src="image/Group 227.png" alt="price">
+      </div>
+      <div class="Add-Wrap-Shopping-Button">
+        <button type="button" class="btn btn-success mrgntop bg"> <img src="image/Group (2).png" alt="shopping-card">
+          <p>
+          В корзину</p></button>
+          <div class="add-wrap-for-ms">
+        <img src="image/Vector.png" alt="like">
+        <img src="image/Group 147.png" alt="picture"></div>
+      </div>
+    </div>
+
+    <div class="Shopping-Card">
+
+      <img src="image/avt-zap_main_page_v01 (1)йцу 7 (1).png" alt="produkt">
+      <img src="image/Group 228.png" alt="feedback">
+    <div><h6>Комплект фрикционных дисков</h6>
+    <img src="image/Group 232.png" alt="price">
+    </div>
+    <div class="Add-Wrap-Shopping-Button">
+      <button type="button" class="btn btn-success mrgntop bg"> <img src="image/Group (2).png" alt="shopping-card">
+       <p>В корзину</p></button>
+        <div class="add-wrap-for-ms">
+      <img src="image/Vector.png" alt="like">
+      <img src="image/Group 147.png" alt="picture"></div>
+    </div>
+    </div>
+    <div class="Shopping-Card">
+      <img src="image/avt-zap_main_page_v01 (1)йцу 12.png" alt="produkt">
+      <img src="image/Group 228.png" alt="feedback">
+    <div><h6>Intermediate accumelator sleeve</h6>
+    <img src="image/Group 227.png" alt="price">
+    </div>
+    <div class="Add-Wrap-Shopping-Button">
+      <button type="button" class="btn btn-success mrgntop bg"> <img src="image/Group (2).png" alt="shopping-card">
+       <p>В корзину</p></button>
+        <div class="add-wrap-for-ms">
+      <img src="image/Vector.png" alt="like">
+      <img src="image/Group 147.png" alt="picture"></div>
+    </div>
+    </div>
+      <div class="Shopping-Card add-wrap-for-ms">
+        <img src="image/avt-zap_main_page_v01 (1)йцу 13.png" alt="produkt">
+          <img src="image/Group 228.png" alt="feedback">
+        <div><h6>Intermediate accumelator sleeve</h6>
+        <img src="image/Group 227.png" alt="price">
+        </div>
+        <div class="Add-Wrap-Shopping-Button">
+          <button type="button" class="btn btn-success mrgntop bg"> <img src="image/Group (2).png" alt="shopping-card">
+            В корзину</button>
+          <img src="image/Vector.png" alt="like">
+          <img src="image/Group 147.png" alt="picture">
+        </div>
+    </div>
+    <div class="Shopping-Card">
+      <img src="image/avt-zap_main_page_v01 (1)йцу 12.png" alt="produkt">
+      <img src="image/Group 228.png" alt="feedback">
+    <div><h6>Intermediate accumelator sleeve</h6>
+    <img src="image/Group 227.png" alt="price">
+    </div>
+    <div class="Add-Wrap-Shopping-Button">
+      <button type="button" class="btn btn-success mrgntop bg"> <img src="image/Group (2).png" alt="shopping-card">
+       <p>В корзину</p></button>
+        <div class="add-wrap-for-ms">
+      <img src="image/Vector.png" alt="like">
+      <img src="image/Group 147.png" alt="picture"></div>
+    </div>
+    </div>
+    <div class="Shopping-Card">
+      <img src="image/avt-zap_main_page_v01 (1)йцу 7 (1).png" alt="produkt">
+      <img src="image/Group 228.png" alt="feedback">
+    <div><h6>Комплект фрикционных дисков</h6>
+    <img src="image/Group 232.png" alt="price">
+    </div>
+    <div class="Add-Wrap-Shopping-Button">
+      <button type="button" class="btn btn-success mrgntop bg"> <img src="image/Group (2).png" alt="shopping-card">
+       <p>В корзину</p></button>
+        <div class="add-wrap-for-ms">
+      <img src="image/Vector.png" alt="like">
+      <img src="image/Group 147.png" alt="picture"></div>
+    </div>
+    </div>
+    <div class="Shopping-Card">
+      <img src="image/avt-zap_main_page_v01 (1)йцу 12.png" alt="produkt">
+      <img src="image/Group 228.png" alt="feedback">
+    <div><h6>Intermediate accumelator sleeve</h6>
+    <img src="image/Group 227.png" alt="price">
+    </div>
+    <div class="Add-Wrap-Shopping-Button">
+      <button type="button" class="btn btn-success mrgntop bg"> <img src="image/Group (2).png" alt="shopping-card">
+       <p>В корзину</p></button>
+        <div class="add-wrap-for-ms">
+      <img src="image/Vector.png" alt="like">
+      <img src="image/Group 147.png" alt="picture"></div>
+    </div>
+    </div>
+    <div class="Shopping-Card add-wrap-for-ms">
+      <img src="image/avt-zap_main_page_v01 (1)йцу 13.png" alt="produkt">
+      <img src="image/Group 228.png" alt="feedback">
+    <div><h6>Intermediate accumelator sleeve</h6>
+    <img src="image/Group 227.png" alt="price">
+    </div>
+    <div class="Add-Wrap-Shopping-Button">
+      <button type="button" class="btn btn-success mrgntop bg"> <img src="image/Group (2).png" alt="shopping-card">
+        В корзину</button>
+      <img src="image/Vector.png" alt="like">
+      <img src="image/Group 147.png" alt="picture">
+    </div>
+    </div>
+</div>
+
+<div class="For-btn-outline-primary">
+<button type="button" class="btn btn-outline-primary" data-bs-toggle="button" autocomplete="off">Показать еще</button>
+</div>
+</div>
+<div class="Wrap-for-Border">
+  <h4>НОВОСТИ</h4>
+  <div class="Border"></div>
+</div>
+</div>
+<div class="Column">
+<div class="Wrap-for-News">
+  <div class="News news-media">
+    <img src="image/Group 43.png" alt="date">
+      <h6>Изменения на сайте</h6>
+     <p>Недавно на сайте мы ввели
+        очередную порцию изменений, 
+        которые, как нам кажется, должны 
+        улучшить функциональность сайта
+        и сделать его более удобным для
+        пользователей. Реакция посетителей
+        не заставила себя долго ждать...</p>
+
+  </div>
+  <div class="News news-media">
+    <img src="image/Group 44.png" alt="date">
+    <h6>Вышла новая версия для
+      мобильных приложений</h6>
+      <p>Что нового в 2.0:</p>
+        <p>— добавлена история поиска;</p>
+        <p>— добавлена синхронизация с сервером;</p>
+        <p> — испрвление ошибок.</p>
+  </div>
+  <div class="News news-media">
+    <img src="image/Group 45.png" alt="date">
+      <h6>Очередная порция обновлений для
+        мобильных приложений</h6>
+        <p>Что нового добавлено:</p>
+        <p>— поддержка пуш-уведомлений;</p>
+        <p>— разделы для покупателей;</p>
+        <p>— просмотр покупателя в заказах;</p>
+        <p>— возможность поиска;</p>
+        <p>— исправление ошибок.</p>
+  </div>
+  <div class="News media-top">
+    <img src="image/Group 46.png" alt="date">
+         <h6>Интерфейс заказов для покупателей
+          стал более функциональным</h6>
+          <p>Он позволяет выводить все 
+            формируемые системой 
+            уведомления(e-mail, смс, web) в
+            едином окне с системой удобной
+            фильтрации поиска.</p>
+  </div>
+</div>
+  <div class="Black-Background">
+    <div class="Info">
+      <div class="Information">
+        <h6>КАТАЛОГ</h6>
+        <p>Каталог запчастей</p>
+        <p>Масла</p>
+        <p> Фильтра</p>
+        <p>Pадиаторы</p>
+        <p>Sonnax</p>
+        <p>Новинки</p>
+        <p>Manual</p>
+        <p>Акции</p>   
+      </div>
+      <div class="Information">
+        <h6>РУБРИКАТОР</h6>
+        <p>Доставка</p>
+        <p>Оплата</p>
+        <p>Гарантия</p>
+        <p>Новости</p>
+        <p>Журнал</p>
+        <p>О магазине</p>
+        <p>Контактная информация</p>
+      </div>
+      <div class="Information">
+        <h6>ИНФОРМАЦИЯ</h6>
+        <p>Пользовательское соглашение об использовании персональных данных</p>
+        <p>Политика конфиденциальности</p>
+        <p>Соглашение на рассылку рекламных материалов</p>
+        <p>Политика возвратов</p>
+          <p>Мы принимаем</p>
+          <img src="image/kisspng-mastercard-money-foothills-florist-business-visa-visa-mastercard-5b4d917e5dd4a1 1.png" alt="paybycard">
+      </div>  
+    </div>
+    <div class="Details">
+      <div class="Wrap-for-Contacts">
+      <div class="Contact-us">
+        <h6>КОНТАКТЫ</h6>
+        <p>+7 383 291 92 86</p>
+        <p>info@avt-zap.ru</p>
+        <h6>Мы онлайн, воспользуйтесь</h6>
+        <h6>Подпишитесь на нашу расслыку и 
+          вы первыми узнаете о скидках и акциях</h6>
+      </div>
+      <div class="Contact-us">
+        <h6>АДРЕС</h6>
+        <p>г. Новосибирск,
+          ул. Планировочная, 5, офис 105</p>
+          <p>Форма обратной связи</p>
+      </div>
+    </div>
+    <div class="Button-with-Email">
+      <div class="input-group">
+        <input type="text" class="email-form form-control bg2" placeholder="Введите ваш email" aria-label="Введите ваш email" aria-describedby="input-group-right">
+        <span class="input-group-text bg" id="input-group-right-example">Подписаться</span>
+      </div>
+      <div class="SocItem-Media">
+      <div class="SocItem">
+      <img src="image/Vector (2).png" alt="facebook">
+      <img src="image/Vector (3).png" alt="telegram">
+      <img src="image/Vector (4).png" alt="twitter">
+      <img src="image/google-plus 1.png" alt="google-plus">
+    </div>
+    </div>
+    </div>
+  <div class="Last-Item">
+    <img src="image/2017 © ООО «АВТ-ЗАП» - запчасти для акпп.png" alt="name">
+  </div>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
