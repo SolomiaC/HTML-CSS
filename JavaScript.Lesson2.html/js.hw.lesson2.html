@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+ - Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої четверті години попадає число
+ (в першу, другу, третю или четверту частину години).
+
+<script>
+  let time = prompt ('what time is it?')
+  if (time <= 15) {
+    console.log('перша чверть годиини')
+  }
+  if (time >= 15 && time <= 30) {
+    console.log('друга чверть годиини')
+  }
+  if (time >=30 && time<= 45) {
+    console.log('третя чверть годиини')
+  }
+  if (time >= 45 && time<= 59) {
+    console.log('четверта чверть годиини')
+  }
+  if (time > 59) {
+      console.log('будь ласка, введіть правильний час')}
+</script>
+
+- У змінній day дано якесь число від 1 до 31. Потрібно визначити, у яку половину(декаду) місяця потрапляє це число (у першу, другу чи третю).
+<script>
+    let month = prompt ('what day is it?')
+    if (month <= 10){
+        console.log('цей день належить до першої декади місяця')
+    }
+    else if(month >=10 && month <=20){
+        console.log('цей день належить до другої декади місяця')
+    }
+    else if(month >=20 && month <=31){
+        console.log('цей день належить до третьої декади місяця')
+    }
+    else if (month >=31){
+        console.log('будь ласка, введіть існуючий день місяця')
+    }
+</script>
+
+- Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і на екрані відображається інфа що заплановано на цей день.
+<script>
+    let day = prompt ('choose the day you need')
+    switch (day) {
+      case 'monday':
+        console.log('mathematics, Ukrainian language, biology')
+        break;
+      case 'tuesday':
+        console.log('English, chemistry, drawing')
+        break;
+      case 'wednesday':
+        console.log('German language, Ukrainian literature, history')
+        break;
+      case 'thursday':
+        console.log('physics, computer science, literature of Great Britain')
+        break;
+      case 'friday':
+        console.log('geography, swimming, music')
+        break;
+      case 'saturday':
+        console.log('ballet classes')
+        break;
+      case 'sunday':
+        console.log('day with family')
+        break;
+      default:
+        console.log('try one more time')
+        break;} 
+</script>
+
+- Потрібно визначити Високосний рік чи ні. Високосні роки діляться націло на 4.
+<script>
+  let year = +prompt('How many days in this year?')
+  if(year % 4 === 0)
+  {console.log('високосний рік')}
+  else if (year % 4 !==0){
+    console.log('це не є високосний рік')
+  }
+</script>
+
+- Використовуючи конструкцію if..else, напишіть код, який запитуватиме: „Яка «офіційна» назва JavaScript?“
+Якщо користувач вводить «ECMAScript», то показати: «Правильно!», інакше – відобразити: «Не знаєте? ECMAScript!
+<script>
+  let javaName = prompt('Яка «офіційна» назва JavaScript?')
+  if(javaName === 'ECMAScript'){
+    console.log('Правильно!')
+  } 
+  else if (javaName !== 'ECMAScript')  
+   {
+    console.log('Не знаєте? ECMAScript!')}
+</script>
+
+- Якщо змінна a не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'. Перевірте  скрипт при a, що дорівнює 1, 0, -3
+<script>
+    let a = +prompt('Введіть 1, 0, -3')
+    if (a != 0){
+      console.log('Правильно')
+    } else {
+      console.log('Неправильно')}
+</script>
+
+- У нас є змінна test, якщо  не дорівнює true, виведіть 'Вірно', інакше виведіть 'Неправильно'.
+Перевірте роботу скрипта при test, що дорівнює true, false. Напишіть два варіанти скрипта - з коротким записом(тернаркою)
+ <script>
+   let test = 'Hello world'
+   if(test === true){
+     console.log('Правильно')
+   }else {
+      console.log('Неправильно')}
+</script>
+<script>
+
+      test === true ? 'Правильно' : 'Неправильно'
+      console.log(test)
+ </script>
+   
+
+</body>
+</html>
