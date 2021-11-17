@@ -14,6 +14,26 @@ while(arrWhile<arrNumbers.length){
     arrWhile++;
 }
 
+// перебрати циклом while та вивести  числа тільки з непарним індексом
+
+let arrElement = [33, 45, 61, 10, 12, 34, 56, 71, 90, 145, 68];
+let elementArr = 0;
+while (elementArr < arrElement.length){
+    if(elementArr % 2 !== 0){
+        console.log(arrElement[elementArr]);    
+    };  elementArr++;
+}
+
+//перебрати циклом while та вивести  числа тільки парні  значення
+
+let arrElementTwo = [33, 45, 61, 10, 12, 34, 56, 71, 90, 145, 68];
+let elementTwo = 0;
+while(elementTwo<arrElementTwo.length){
+    if(elementTwo % 2 === 0){
+        console.log(arrElementTwo[elementTwo]);
+    }; elementTwo++
+}
+
 //перебрати циклом for та вивести  числа тільки з непарним індексом
 
 let arrayNumbers = [2,17,13,6,22,31,45,66,100,-18];
@@ -68,4 +88,6 @@ for(let reflArrayItem = reflArray.length-1; reflArrayItem>=0; reflArrayItem--){
     if(reflArrayItem % 2 !== 0){
         console.log(reflArray[reflArrayItem])
     }
-}
+} 
+
+

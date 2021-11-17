@@ -2,16 +2,24 @@
 // - з 5 значень стрічкового, числового та булевого типу
 // - та вивести його в консоль
 
-let array = [
-    {name: 'Anna', age: 25, developer: true},
-    {name: 'Emma', age: 21, developer: false},
-    {name: 'Otto', age: 27, developer: false},
-    {name: 'Ross', age: 31, developer: true},
-    {name: 'Monika', age: 34, developer: true}
-];
-for (let key of array){
-    console.log(key)
-}
+let numbers = [2, 56, 73, 3, 13]
+console.log(numbers[0]);
+console.log(numbers[1]);
+console.log(numbers[2]);
+console.log(numbers[3]);
+console.log(numbers[4])
+let string = ['Venus', 'Mars', 'Saturn', 'Jupiter', 'Mercury']
+console.log(string[0]);
+console.log(string[1]);
+console.log(string[2]);
+console.log(string[3]);
+console.log(string[4])
+let boolean = [5>6, 4===7, 8<9, 1!==1,  3>0]
+console.log(boolean[0]);
+console.log(boolean[1]);
+console.log(boolean[2]);
+console.log(boolean[3]);
+console.log(boolean[4])
 
 // За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
 
@@ -55,7 +63,7 @@ for(let p of pages){
 
 //- Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки булеві елементи
 
-let books = ['day', 'night', 6, true, 55, 'evening', 76, false, 100, 'morning'];
+let books = ['day', 'night', 6, 5==5, 55, 'evening', 76, 4>8, 100, 'morning'];
 for(let book of books){
     console.log(book)
 }
@@ -63,7 +71,7 @@ for(let book of books){
 //- Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки числові елементи
 
 
-let group = [56, 'june', 'august', 77, true, 809, 63, 'april', 87, false];
+let group = [56, 'june', 'august', 77, 4===4, 809, 63, 'april', 87, 9!==9];
 for(let item = 0; item< group.length; item++){
     if(typeof group[item] === 'boolean'){
         console.log(group[item])
@@ -72,7 +80,7 @@ for(let item = 0; item< group.length; item++){
 
 //- Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки числові елементи
 
-let groupTwo = [56, 'june', 'august', 77, true, 809, 63, 'april', 87, false];
+let groupTwo = [56, 'june', 'august', 77, 5<7, 809, 63, 'april', 87, 5>6];
 for(let itemTwo = 0; itemTwo<groupTwo.length; itemTwo++){
     if(typeof groupTwo[itemTwo] === 'number'){
         console.log(groupTwo[itemTwo])
@@ -81,7 +89,7 @@ for(let itemTwo = 0; itemTwo<groupTwo.length; itemTwo++){
 
 //- Створити масив з 10 елементів числового, стрічкового і булевого типу. За допомогою if та typeof вивести тільки рядкові елементи
 
-let groupThree = [56, 'june', 'august', 77, true, 809, 63, 'april', 87, false];
+let groupThree = [56, 'june', 'august', 77, 2>0, 809, 63, 'april', 87, 0===8];
 for(let itemThree =0; itemThree<groupThree.length; itemThree++){
 if(typeof groupThree[itemThree] === 'string'){
     console.log(groupThree[itemThree])
@@ -95,10 +103,10 @@ bigArray [0] = 234,
 bigArray [1] = 'anna',
 bigArray [2] = 'emma',
 bigArray [3] = 87,
-bigArray [4] = true,
+bigArray [4] = 9>10,
 bigArray [5] = 'natalia',
 bigArray [6] = 712,
-bigArray [7] = false,
+bigArray [7] = 45===9,
 bigArray [8] = 'sofia',
 bigArray [9] = 12
 for(let itemsArray = 0; itemsArray < bigArray.length; itemsArray++){
@@ -110,8 +118,45 @@ let empty = [];
 empty [0] = 'Harry Potter and the Chamber of Secrets',
 empty [1] = 1998, 
 empty [2] = 'pages252',
-empty [3] = false,
+empty [3] = 10!==10,
 empty [4] = 'J.K.Rowling'
 for(let items = 0; items<empty.length; items++){
     console.log(empty[items])
 }
+
+//  Створити цикл for на 10  ітерацій з кроком 1
+//  Вивести поточний номер кроку через console.log та document.write
+
+for(let i = 0; i<=10; i++){
+    console.log(i)
+    document.write(`${i}`)
+}
+
+//  Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+for(let i=0; i<=100; i++){
+    console.log(i)
+    document.write(`${i}`)
+}
+
+//Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
+for(let i=0; i<=100; i=i+2){
+    console.log(i)
+    document.write(`${i}`)
+}
+
+//Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
+for(let i=0; i<-100; i++){
+    if( i % 2 === 0){
+        console.log(i)
+        document.write(`${i}`)
+    }
+}
+
+//Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
+for(let i=0; i<=100; i++){
+    if(i%2 !==0){
+        console.log(i)
+        document.write(`${i}`)
+    }
+}
+
