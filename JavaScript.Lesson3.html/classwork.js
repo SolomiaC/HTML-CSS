@@ -30,7 +30,7 @@ let arrElementTwo = [33, 45, 61, 10, 12, 34, 56, 71, 90, 145, 68];
 let elementTwo = 0;
 while(elementTwo<arrElementTwo.length){
     if(elementTwo % 2 === 0){
-        console.log(arrElementTwo[elementTwo]);
+        console.log(elementTwo);
     }; elementTwo++
 }
 
@@ -58,8 +58,8 @@ let nrArr = [2,17,13,6,22,31,45,66,100,-18];
 for(let nrArrItem = 0; nrArrItem<nrArr.length; nrArrItem++){
     if(nrArrItem % 3 ===0){
         console.log('Okten')
-    } else {console.log(nrArr[nrArrItem])}
-}
+    } else {console.log(nrArr[nrArrItem])}}
+
 
 //вивести масив в зворотньому порядку.
 
@@ -70,11 +70,9 @@ for(let reflection = arrReflection.length-1; reflection>=0; reflection--){
 
 //всі попередні завдання (окрім 8), але в зворотньому циклі  
 let reflectionArr = [2,17,13,6,22,31,45,66,100,-18];
-for(let reflItem = reflectionArr.length-1; reflItem>=0; reflItem--){
+for(let reflItem of reflectionArr){
     if(reflItem % 3 ===0){
-        console.log('Okten')
-    } else {console.log(reflectionArr[reflItem])}
-}
+        console.log('Okten')}}
 
 let reflectionArray = [2,17,13,6,22,31,45,66,100,-18];
 for(let reflArr = reflectionArray.length-1; reflArr>=0; reflArr--){
@@ -86,8 +84,5 @@ for(let reflArr = reflectionArray.length-1; reflArr>=0; reflArr--){
 let reflArray = [2,17,13,6,22,31,45,66,100,-18];
 for(let reflArrayItem = reflArray.length-1; reflArrayItem>=0; reflArrayItem--){
     if(reflArrayItem % 2 !== 0){
-        console.log(reflArray[reflArrayItem])
+        console.log(reflArray[reflArrayItem]) } 
     }
-} 
-
-
