@@ -48,7 +48,8 @@ function celebration (fest, size){
     document.write('<ul>');
    for(let i = 0; i <= size; i++){
     document.write(`<li> ${fest} </li>`)}
-    document.write('</ul>')}
+    document.write('</ul>')
+}
 celebration ('Christmas', 8);
 
 //- створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
