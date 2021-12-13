@@ -43,7 +43,22 @@ for (let i = 0; i < array6.length; i++){
 }
 console.log(suma)
 
-//Дан массив с числами. С помощью цикла найдите сумму квадратов элементов этого массива.  
    
 //Дан массив с числами. Найдите среднее арифметическое его элементов (сумма элементов, делить на количество). 
+let array7 = [2, 45, 61, 3, 8, 19, 21, 6, 52, 109, 4];
+let suma2 = 0;
+let newArray;
+for (let i = 0; i < array7.length; i++){
+    suma2 += array7[i];
+    newArray = suma2 / array7.length
+} console.log(newArray)
 
+
+let number1 = 67;
+let number2 = 132;
+let value;
+value = 67 + 132
+console.log(value)
+
+value += 100
+console.log(value)  
