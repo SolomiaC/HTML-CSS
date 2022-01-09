@@ -270,6 +270,104 @@ console.log(resultGL, resultLG)
  } exponentiating (5, 2)
  
 
-  //Напишите функцию JavaScript, чтобы получить все возможные подмножества с комбинациями фиксированной длины (например, 2) в массиве.
+ // // // // // // // // // // // // // // // //
+ let emptyString = '';
+ function getStringForTrim (strElement){
+      for( let i = 0; i < strElement.length; i++){
+          emptyString += ` ${strElement[i].charCodeAt()}`
+      }
+ } getStringForTrim('hello sun')
+ console.log(emptyString)
+
+   //Напишите функцию JavaScript, чтобы получить все возможные подмножества с комбинациями фиксированной длины (например, 2) в массиве.
  // Пример массива: [1, 2, 3] и длина подмножества 2. Ожидаемый результат: [[2, 1], [3, 1], [3, 2], [3, 2, 1]]
 
+ let arrIsArr = [23, 54,12345, 9, 'hello'];
+ let resForArrIsArr = Array.isArray(arrIsArr);
+ console.log(resForArrIsArr)
+ arrIsArr[4] = 'wow'
+ console.log(arrIsArr)
+ let arrIsArrValue = arrIsArr.indexOf(54)
+ console.log(arrIsArrValue)
+ let arrIsArrValue2 = arrIsArr.unshift('boom') //add an element to the beginning of the array | pop - delete the last element | shift - delete the first one
+ console.log(arrIsArrValue2)
+
+let createNWrap = [];
+ function createN (num2, size){
+     for (let i = 0; i < size.length; i++){
+        createNWrap = num2.split()
+    }
+ } createN(10, 10)
+
+
+  // продублювати масив в новий масив                               BACK TO THIS TASK!!!!!!!!!!!!!!!!
+  let resultForDouble = [];
+  function getDoubleArray (doubleArray){
+       for (let i = 0; i < 2; i++){
+        if (Array.isArray(doubleArray)){
+      resultForDouble = resultForDouble.concat(doubleArray)
+    }}
+}getDoubleArray([13, 14, 15])
+  console.log(resultForDouble)
+
+   //create function that delete first element in array
+   let emptyForResDelate = [];
+   function delateElement (dE){
+         emptyForResDelate = dE.shift();
+   } delateElement(['morning', 2, 'day', 4, 'night'])
+   console.log(emptyForResDelate)
+
+
+ // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
+   let arrWithNames = ['Emma', 'Den', 'Tom', 'Rupert', 'Evanna', 'Bonnie'];
+   let emptyForArrWithNames = [];
+   for(let i = 0; i < arrWithNames.length; i++){
+       emptyForArrWithNames.push(arrWithNames[i].length)
+   } console.log(emptyForArrWithNames)
+
+    
+   // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
+ 
+    function firstFun (getArray, fn){
+        let cbResult = 'New value: ';
+        for (let i = 0; i < getArray.length; i++){
+          cbResult += fn(getArray[i]) }
+          return cbResult
+        }
+    function secondFun(elementFromFirstFunction){
+         return elementFromFirstFunction[0].toUpperCase() + elementFromFirstFunction.slice(1);
+    }; 
+    function secondFun2 (elementFromFirstFunction){
+            return elementFromFirstFunction * 10 + (' ');
+    };
+    function secondFun3 (elementFromFirstFunction){
+            return `${elementFromFirstFunction.name} is ${elementFromFirstFunction.age} years old`;
+    };
+    function secondFun4 (elementFromFirstFunction){
+        return elementFromFirstFunction.split('').reverse().join('') + (',');
+    };
+
+    let forConsole = firstFun([23, 5, 90], secondFun2)
+    console.log(forConsole);
+    let forConsole2 = firstFun([{name: 'Olga', age: 30}], secondFun3)
+    console.log(forConsole2);
+    let forConsole3 = firstFun(['my', 'name', 'is', 'Lily'], secondFun)
+    console.log(forConsole3);
+    let forConsole4 = firstFun(['1,2,3,4', 'a, b, c, d'], secondFun4)
+    console.log(forConsole4)
+
+    // // // // // // // // // // // // // // // // // // // // // // // // // // // // //
+
+    function arrayFunction(currentValue, index, array){
+            if (Array.isArray(array) && currentValue < 5){
+                return true
+            }else {return false}  
+    } 
+    function fun(){
+        let valueForFun = [3, 4, 2]
+        let resultForEveryFun = valueForFun.every(arrayFunction)
+        console.log(resultForEveryFun)
+    }
+    fun()
+
+    //
